@@ -77,6 +77,13 @@ header {
     margin: 0;
     padding: 0;
 }
+/* Asegura que los iconos no se volteen por error */
+.contact-info i {
+    display: inline-block;
+    transform: scaleX(1); /* Esto asegura que NO estén en espejo */
+    margin-right: 8px;    /* Separa el icono del texto */
+    color: #7ab333;       /* El verde de CENCARCI */
+}
 
 .nav-links a {
     text-decoration: none;
@@ -383,4 +390,5 @@ header {
     .hero-text-col h1 {
         font-size: 2.5rem;
     }
+
 }
